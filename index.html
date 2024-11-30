@@ -1,0 +1,248 @@
+<<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Monn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Teks putih agar kontras dengan latar belakang */
+            background-color: #000; /* Latar belakang hitam */
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #007BFF, #00D4FF);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Section Heading Styles */
+        h2 {
+            color: #007BFF; /* Warna biru untuk semua h2 */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #007BFF;
+            margin: 10px auto 0;
+        }
+
+        /* Tentang Section */
+        #about p {
+            color: #fff; /* Teks putih untuk kontras dengan latar belakang hitam */
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Bayangan teks untuk kontras */
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        ul li {
+            background-color: #444; /* Warna latar belakang item list lebih terang agar kontras */
+            color: #fff; /* Teks putih agar kontras */
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        ul li i {
+            font-size: 1.5rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        /* Portfolio Styles */
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin: 0 auto;
+        }
+
+        /* Contact Card Styles */
+        .contact-card {
+            background-color: #444; /* Warna latar belakang card agar terlihat */
+            color: white; /* Teks putih untuk kontras */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .contact-card p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .contact-card i {
+            color: #007BFF;
+            margin-right: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Web Monn Jasa Pembuatan Website</h1>
+        <p>Cepat, dan Terjangkau</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang</h2>
+        <p><strong>Saya adalah seorang mahasiswa yang cukup berpengalaman dalam memberikan solusi pembuatan website untuk
+            kebutuhan bisnis dan personal. Fokus saya adalah memberikan layanan berkualitas dengan harga yang
+            relatif murah. Karna tujuan utama saya adalah untuk belajar dan merasakan exprience lansung dari permintaan customer</strong></p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Layanan</h2>
+        <ul>
+            <li><i class="fas fa-briefcase"></i> Website Company Profile</li>
+            <li><i class="fas fa-shopping-cart"></i> Website Toko Online</li>
+            <li><i class="fas fa-rocket"></i> Landing Page</li>
+            <li><i class="fas fa-user"></i> Website Portofolio</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portofolio</h2>
+        <p>Berikut adalah beberapa proyek yang telah saya selesaikan:</p>
+        <p>Anda dapat mengeklik gambar di bawah untuk menuju ke halaman website project tersebut.</p>
+        <div>
+            <a href="https://wasyaaa.github.io/Gym-Monn/" target="_blank">
+                <img src="project1.jpg" alt="Project 1">
+            </a>
+            <a href="https://wasyaaa.github.io/Percobaan/" target="_blank">
+                <img src="project2.jpg" alt="Project 2">
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <div class="contact-card">
+            <p><i class="fas fa-envelope"></i> Email: ruimonis321@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Telepon: +62 821 412 6374</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jasa Pembuatan Website Monn. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
